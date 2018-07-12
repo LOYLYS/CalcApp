@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_notice"
+        android:text="@string/text_tip"
+        android:textSize="@dimen/sp_20"
+        android:padding="@dimen/dp_7"
+        android:background="@color/bg_normal_key"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etext_history"
+        android:layout_above="@+id/etext_input"
+        android:enabled="false"
+        android:lines="1"
+        android:maxLength="10"
+        android:textAlignment="textEnd"
+        android:textSize="@dimen/sp_40"
+        android:background="@drawable/edittext_input_style"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etext_input"
+        android:layout_above="@+id/keyboard_layout"
+        android:enabled="false"
+        android:lines="1"
+        android:maxLength="10"
+        android:textAlignment="textEnd"
+        android:textSize="@dimen/sp_40"
+        android:background="@drawable/edittext_input_style"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/keyboard_layout"
+        android:stretchColumns="*"
+        android:layout_alignParentBottom="true">
+        <TableRow>
+            <Button
+                android:id="@+id/button_key_one"
+                android:text="@string/key_one"
+                android:textSize="@dimen/sp_40"
+                android:background="@drawable/normal_key_style"/>
+            <Button
+                android:id="@+id/button_key_two"
+                android:text="@string/key_two"
+                android:textSize="@dimen/sp_40"
+                android:background="@drawable/normal_key_style" />
+            <Button
+                android:id="@+id/button_key_three"
+                android:text="@string/key_three"
+                android:textSize="@dimen/sp_40"
+                android:background="@drawable/normal_key_style" />
+            <Button
+                android:id="@+id/button_key_add"
+                android:text="@string/key_add"
+                android:textSize="@dimen/sp_40"
+                android:background="@drawable/normal_key_style" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button_key_four"
+                android:text="@string/key_four"
+                android:textSize="@dimen/sp_40"
+                android:background="@drawable/normal_key_style" />
+            <Button
+                android:id="@+id/button_key_five"
+                android:text="@string/key_five"
+                android:textSize="@dimen/sp_40"
+                android:background="@drawable/normal_key_style" />
+            <Button
+                android:id="@+id/button_key_six"
+                android:text="@string/key_six"
+                android:textSize="@dimen/sp_40"
+                android:background="@drawable/normal_key_style" />
+            <Button
+                android:id="@+id/button_key_sub"
+                android:text="@string/key_sub"
+                android:textSize="@dimen/sp_40"
+                android:background="@drawable/normal_key_style" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button_key_seven"
+                android:text="@string/key_seven"
+                android:textSize="@dimen/sp_40"
+                android:background="@drawable/normal_key_style" />
+            <Button
+                android:id="@+id/button_key_eight"
+                android:text="@string/key_eight"
+                android:textSize="@dimen/sp_40"
+                android:background="@drawable/normal_key_style"/>
+            <Button
+                android:id="@+id/button_key_nine"
+                android:text="@string/key_nine"
+                android:textSize="@dimen/sp_40"
+                android:background="@drawable/normal_key_style" />
+            <Button
+                android:id="@+id/button_key_mul"
+                android:text="@string/key_mul"
+                android:textSize="@dimen/sp_40"
+                android:background="@drawable/normal_key_style" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button_key_zero"
+                android:text="@string/key_zero"
+                android:textSize="@dimen/sp_40"
+                android:background="@drawable/normal_key_style"/>
+            <Button
+                android:id="@+id/button_key_dot"
+                android:text="@string/key_dot"
+                android:textSize="@dimen/sp_40"
+                android:background="@drawable/normal_key_style" />
+            <Button
+                android:id="@+id/button_key_delete"
+                android:text="@string/key_delete"
+                android:textSize="@dimen/sp_40"
+                android:background="@drawable/normal_key_style" />
+            <Button
+                android:id="@+id/button_key_div"
+                android:text="@string/key_div"
+                android:textSize="@dimen/sp_40"
+                android:background="@drawable/normal_key_style" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button_key_ac"
+                android:text="@string/key_ac"
+                android:textSize="@dimen/sp_40"
+                android:background="@drawable/dark_key_style" />
+            <Button
+                android:id="@+id/button_key_result"
+                android:text="@string/key_result"
+                android:layout_span="3"
+                android:textSize="@dimen/sp_40"
+                android:background="@drawable/light_key_style"/>
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
